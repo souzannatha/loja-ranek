@@ -1,12 +1,12 @@
-import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <nav className={styles.header}>
       <ul>
         <li>
-          <NavLink to="/" end className={styles.link}>
+          <NavLink className={styles.link} to="/" end>
             Produtos
           </NavLink>
         </li>
