@@ -10,8 +10,21 @@ img {
 a {
   text-decoration: none;
 }
+
 h1 {
   font-size: 1.4rem;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh + 10rem);
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.content {
+  flex: 1;
 }
 
 .animeLeft{
@@ -20,9 +33,24 @@ h1 {
   animation: animeLeft 0.5s forwards;
 }
 
+.loading {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 10px solid #ccc;
+  border-right: transparent;
+  animation: loading 1s infinite;
+}
+
 @keyframes animeLeft {
   to{
     transform: initial;
     opacity: initial
+  }
+}
+
+@keyframes loading {
+  to{
+    transform: rotate(360deg);
   }
 }
